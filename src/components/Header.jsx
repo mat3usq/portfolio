@@ -4,8 +4,8 @@ import StarsCanvas from './StarsBackground'
 
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 import { navigation } from '../constants/constants'
-import { MenuSvg } from '../assets/svgs/MenuSvg'
-import { HamburgerMenu } from './BackgroundHeader'
+import { HamburgerSvg } from '../assets/svgs/HamburgerSvg'
+import { BackgroundMenu } from './BackgroundHeader'
 
 import { useLocation } from 'react-router-dom'
 import { useState } from 'react'
@@ -61,12 +61,12 @@ const Header = () => {
 							</a>
 						))}
 					</div>
-					{openNavigation ? <StarsCanvas /> : null}
-					<HamburgerMenu />
+					{openNavigation ? <StarsCanvas className="lg:hidden" /> : null}
+					<BackgroundMenu />
 				</nav>
 
 				<Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
-					<MenuSvg openNavigation={openNavigation} />
+					<HamburgerSvg openNavigation={openNavigation} />
 				</Button>
 			</div>
 		</div>

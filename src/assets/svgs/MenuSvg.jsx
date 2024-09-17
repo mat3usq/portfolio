@@ -1,4 +1,4 @@
-export const MenuSvg = ({ openNavigation }) => {
+export const HamburgerSvg = ({ openNavigation }) => {
 	return (
 		<svg
 			className={`overflow-visible transition-transform duration-500 ease-in-out ${

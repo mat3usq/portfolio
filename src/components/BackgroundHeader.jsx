@@ -59,7 +59,7 @@ export const Planets = () => {
 	)
 }
 
-export const HamburgerMenu = () => {
+export const BackgroundMenu = () => {
 	return (
 		<div className="absolute inset-0 pointer-events-none lg:hidden">
 			<div className="absolute inset-0 opacity-[.15]">
