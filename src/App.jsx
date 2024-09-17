@@ -1,6 +1,6 @@
 import ButtonGradient from './assets/svgs/ButtonGradient'
-import Button from './components/Button'
 import Header from './components/Header'
+import StarsCanvas from './components/StarsBackground'
 
 const App = () => {
 	return (
@@ -8,7 +8,7 @@ const App = () => {
 			<div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
 				<Header />
 			</div>
-			<ButtonGradient />
+			<StarsCanvas />
 		</>
 	)
 }

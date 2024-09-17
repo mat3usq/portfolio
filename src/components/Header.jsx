@@ -1,5 +1,6 @@
 import portfolioLogo from '../assets/portfolioLogo.svg'
 import Button from './Button'
+import StarsCanvas from './StarsBackground'
 
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 import { navigation } from '../constants/constants'
@@ -60,6 +61,7 @@ const Header = () => {
 							</a>
 						))}
 					</div>
+					{openNavigation ? <StarsCanvas /> : null}
 					<HamburgerMenu />
 				</nav>
 
