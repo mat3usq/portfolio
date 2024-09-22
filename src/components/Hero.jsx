@@ -3,20 +3,16 @@ import Button from './Button'
 import javaLogo from '../assets/javaLogo.svg'
 import galaxy from '../assets/darkerGalaxy.jpg'
 import { PlanetsAndOrbits, BottomLine, BackgroundScreens } from './HeroBackground'
+import { heroIcons } from '../constants/constants'
 
 import { useRef } from 'react'
+import { ScrollParallax } from 'react-just-parallax'
 
 const Hero = () => {
 	const parallaxRef = useRef(null)
 
 	return (
-		<Section
-			className="pt-[12rem] -mt-[5rem]"
-			crosses
-			crossesOffset="lg:translate-y-[5rem]"
-			customPaddings
-			id="hero"
-			photo={galaxy}>
+		<Section className="pt-[12rem] -mt-[5rem]" crosses crossesOffset="lg:translate-y-[5rem]" id="hero" photo={galaxy}>
 			<div className="container relative" ref={parallaxRef}>
 				<div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
 					<div className="text-center flex justify-center items-center mb-[3rem] md:mb-20 lg:mb-[6rem]">
@@ -79,6 +75,21 @@ const Hero = () => {
 
 							<div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
 								interview me
+								<ScrollParallax isAbsolutelyPositioned>
+									<ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+										{heroIcons.map((icon, index) => (
+											<li className="p-5" key={index}>
+												<img
+													type="image/svg+xml"
+													src={icon.source}
+													width={icon.width}
+													height={icon.height}
+													alt={icon.title}
+												/>
+											</li>
+										))}
+									</ul>
+								</ScrollParallax>
 							</div>
 						</div>
 						<BackgroundScreens />
@@ -86,6 +97,7 @@ const Hero = () => {
 					<PlanetsAndOrbits />
 				</div>
 			</div>
+			<BottomLine />
 		</Section>
 	)
 }
