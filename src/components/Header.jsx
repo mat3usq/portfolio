@@ -5,7 +5,7 @@ import StarsCanvas from './StarsBackground'
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 import { navigation } from '../constants/constants'
 import { HamburgerSvg } from '../assets/svgs/HamburgerSvg'
-import { BackgroundMenu } from './BackgroundHeader'
+import { BackgroundMenu } from './HeaderBackground'
 
 import { useLocation } from 'react-router-dom'
 import { useState } from 'react'

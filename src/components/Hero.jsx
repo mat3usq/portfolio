@@ -2,8 +2,13 @@ import Section from './Section'
 import Button from './Button'
 import javaLogo from '../assets/javaLogo.svg'
 import galaxy from '../assets/darkerGalaxy.jpg'
+import { PlanetsAndOrbits, BottomLine, BackgroundScreens } from './HeroBackground'
+
+import { useRef } from 'react'
 
 const Hero = () => {
+	const parallaxRef = useRef(null)
+
 	return (
 		<Section
 			className="pt-[12rem] -mt-[5rem]"
@@ -12,7 +17,7 @@ const Hero = () => {
 			customPaddings
 			id="hero"
 			photo={galaxy}>
-			<div className="container relative">
+			<div className="container relative" ref={parallaxRef}>
 				<div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
 					<div className="text-center flex justify-center items-center mb-[3rem] md:mb-20 lg:mb-[6rem]">
 						<svg className="hidden md:block w-[4vw] h-auto mr-3 mb-3" width="5em" height="10em" viewBox="0 0 21 44">
@@ -73,10 +78,12 @@ const Hero = () => {
 							<div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
 
 							<div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-								interview me 
+								interview me
 							</div>
 						</div>
+						<BackgroundScreens />
 					</div>
+					<PlanetsAndOrbits />
 				</div>
 			</div>
 		</Section>
