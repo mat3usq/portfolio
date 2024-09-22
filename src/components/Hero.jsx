@@ -4,6 +4,7 @@ import javaLogo from '../assets/javaLogo.svg'
 import galaxy from '../assets/darkerGalaxy.jpg'
 import { PlanetsAndOrbits, BottomLine, BackgroundScreens } from './HeroBackground'
 import { heroIcons } from '../constants/constants'
+import Notification from './Notification'
 
 import { useRef } from 'react'
 import { ScrollParallax } from 'react-just-parallax'
@@ -89,6 +90,12 @@ const Hero = () => {
 											</li>
 										))}
 									</ul>
+								</ScrollParallax>
+								<ScrollParallax isAbsolutelyPositioned>
+									<Notification
+										className="hidden absolute -right-[6rem] bottom-[14rem] w-[18rem] xl:flex"
+										title="Coding ..."
+									/>
 								</ScrollParallax>
 							</div>
 						</div>

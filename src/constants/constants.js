@@ -32,3 +32,13 @@ export const heroIcons = [
 	{ title: 'Maven Logo', width: '43', height: '43', source: mavenLogo },
 	{ title: 'Github Logo', width: '35', height: '35', source: githubLogo },
 ]
+
+import gamer from '../assets/gamer.svg'
+import coffee from '../assets/coffee.svg'
+import computer from '../assets/computer.svg'
+
+export const notificationsImages = [
+	{ title: 'Gamer PacMan', width: '35', height: '35', source: gamer },
+	{ title: 'Coffee', width: '33', height: '33', source: coffee },
+	{ title: 'Computer with Rocket', width: '43', height: '43', source: computer },
+]
