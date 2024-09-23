@@ -58,13 +58,13 @@ const Hero = () => {
 						</svg>
 					</div>
 
-					<p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+					<p className="body-1 max-w-3xl mx-auto mb-6 text-n-1 lg:mb-8">
 						As a Programmer, I specialize in crafting secure, scalable, and efficient systems. My experience spans
 						across website, and software development, ensuring seamless integration from the backend to the user
 						interface. With a solid understanding of frontend technologies, I create cohesive and high-performing
 						solutions that elevate the entire user experience.
 					</p>
-					<Button href="#projects" white>
+					<Button href="#skills" white>
 						Find out more!
 					</Button>
 				</div>

@@ -120,7 +120,7 @@ export const PlanetsAndOrbits = ({ parallaxRef }) => {
 	]
 
 	return (
-		<div className="absolute -top-[12rem] left-1/2 w-[20rem] sm:w-[30rem] sm:-top-[18rem] md:w-[50rem] md:-top-[30rem] lg:-top-[44rem] lg:w-[70rem] aspect-square border border-n-2/5 rounded-full -translate-x-1/2">
+		<div className="absolute -top-[12rem] left-1/2 w-[20rem] sm:w-[30rem] sm:-top-[18rem] md:w-[50rem] md:-top-[30rem] lg:-top-[35rem] lg:w-[75rem] aspect-square border border-n-2/5 rounded-full -translate-x-1/2">
 			<Orbits />
 
 			<MouseParallax strength={0.05} parallaxContainerRef={parallaxRef}>
