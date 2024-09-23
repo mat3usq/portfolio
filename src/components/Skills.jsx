@@ -2,11 +2,13 @@ import React from 'react'
 import Section from './Section'
 import { mySkillsSet } from '../constants/constants'
 import checked from '../assets/checked.svg'
+import portfolioLogo from '../assets/portfolioLogo.svg'
+import { skillsIcons } from '../constants/constants'
 
 const Skills = () => {
 	return (
 		<Section crosses>
-			<div className="container lg:flex">
+			<div className="container lg:flex lg:items-center">
 				<div className="max-w-[40rem]">
 					<h2 className="h2 mb-4 md:mb-8">My Skills Set</h2>
 
@@ -21,6 +23,41 @@ const Skills = () => {
 							</li>
 						))}
 					</ul>
+				</div>
+
+				<div className="lg:ml-auto xl:w-[38rem] mt-4">
+					{/* <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores inventore doloremque mollitia sunt fugiat magnam eaque aliquid velit ipsum facilis cumque facere, maxime perferendis consectetur. Atque impedit fugit debitis libero!</p> */}
+
+					<div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+						<div className="flex w-56 aspect-square m-auto border border-n-6 rounded-full">
+							<div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
+								<div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
+									<img src={portfolioLogo} width={48} height={48} alt="brainwave" />
+								</div>
+							</div>
+						</div>
+
+						<ul>
+							{skillsIcons.map((icon, index) => (
+								<li
+									key={icon.id}
+									className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}>
+									<div
+										className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
+											index * 45
+										}`}>
+										<img
+											className="m-auto"
+											width={icon.width}
+											height={icon.height}
+											alt={icon.title}
+											src={icon.source}
+										/>
+									</div>
+								</li>
+							))}
+						</ul>
+					</div>
 				</div>
 			</div>
 		</Section>

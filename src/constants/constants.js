@@ -21,13 +21,18 @@ export const navigation = [
 	},
 ]
 
-import JavaLogo from '../assets/javaLogo.svg'
+import javaLogo from '../assets/javaLogo.svg'
 import springLogo from '../assets/springLogo.svg'
 import mavenLogo from '../assets/mavenLogo.svg'
 import githubLogo from '../assets/githubLogo.svg'
+import htmlLogo from '../assets/htmlLogo.svg'
+import cssLogo from '../assets/cssLogo.svg'
+import jsLogo from '../assets/jsLogo.svg'
+import mysqlLogo from '../assets/mysqlLogo.svg'
+import oracleLogo from '../assets/oracleLogo.svg'
 
 export const heroIcons = [
-	{ title: 'Java Logo', width: '35', height: '35', source: JavaLogo },
+	{ title: 'Java Logo', width: '35', height: '35', source: javaLogo },
 	{ title: 'Spring Logo', width: '33', height: '33', source: springLogo },
 	{ title: 'Maven Logo', width: '43', height: '43', source: mavenLogo },
 	{ title: 'Github Logo', width: '35', height: '35', source: githubLogo },
@@ -68,5 +73,64 @@ export const mySkillsSet = [
 		title: 'Open to Growth',
 		text: 'I possess strong communication skills and the ability to learn quickly. I am fully committed to developing my skills and eager to collaborate within a team. Open to new opportunities, I thrive in environments that challenge me and allow for continuous growth.',
 		stars: 5,
+	},
+]
+
+export const skillsIcons = [
+	{
+		id: '0',
+		title: 'Java',
+		source: javaLogo,
+		width: 35,
+		height: 35,
+	},
+	{
+		id: '1',
+		title: 'Spring',
+		source: springLogo,
+		width: 33,
+		height: 33,
+	},
+	{
+		id: '2',
+		title: 'Maven',
+		source: mavenLogo,
+		width: 38,
+		height: 38,
+	},
+	{
+		id: '3',
+		title: 'Html',
+		source: htmlLogo,
+		width: 35,
+		height: 35,
+	},
+	{
+		id: '4',
+		title: 'Css',
+		source: cssLogo,
+		width: 35,
+		height: 35,
+	},
+	{
+		id: '5',
+		title: 'JavaScritp',
+		source: jsLogo,
+		width: 30,
+		height: 30,
+	},
+	{
+		id: '6',
+		title: 'Oracle',
+		source: oracleLogo,
+		width: 35,
+		height: 35,
+	},
+	{
+		id: '7',
+		title: 'MySql',
+		source: mysqlLogo,
+		width: 38,
+		height: 38,
 	},
 ]
