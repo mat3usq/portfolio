@@ -4,7 +4,7 @@ import { mySkillsSet } from '../constants/constants'
 import checked from '../assets/checked.svg'
 import portfolioLogo from '../assets/portfolioLogo.svg'
 import { skillsIcons } from '../constants/constants'
-import { LeftCurve, RightCurve, TopCurve } from '../assets/svgs/Curves'
+import { BottomCurve, LeftCurve, RightCurve, TopCurve } from '../assets/svgs/Curves'
 
 const Skills = () => {
 	return (
@@ -55,14 +55,13 @@ const Skills = () => {
 							))}
 						</ul>
 						<TopCurve className="z-10" />
+						<BottomCurve className="z-10" />
 						<LeftCurve className="z-10" />
 						<RightCurve className="z-10" />
 					</div>
-					{/* <h6 className="body-2 ml-5 my-8 text-n-1 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto"> */}
-					{/* Other technologies I know well:{' '} */}
-					{/* </h6>{' '} */}
 				</div>
 			</div>
+			<h5 className="tagline mt-16 text-center text-n-1">Other technologies I know well</h5>{' '}
 		</Section>
 	)
 }

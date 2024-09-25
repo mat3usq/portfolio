@@ -57,3 +57,77 @@ export const TopCurve = () => {
 		</>
 	)
 }
+
+export const BottomCurve = () => {
+	return (
+		<>
+			<div className="hidden xl:block">
+				<svg
+					className="absolute -bottom-[18rem] left-[3rem] transform -translate-x-1/2"
+					width="400"
+					height="310"
+					viewBox="0 0 400 300"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<circle cx="3" cy="300" r="3" fill="#252134" />
+					<path
+						d="M3 300 C100 300, 150 150, 200 0"
+						stroke="#252134"
+						strokeWidth="1"
+						fill="none"
+						markerEnd="url(#small-arrowhead-left)"
+					/>
+					<defs>
+						<marker id="small-arrowhead-left" markerWidth="6" markerHeight="4" refX="3" refY="2" orient="auto">
+							<polygon points="0 0, 6 2, 0 4" fill="#252134" />
+						</marker>
+					</defs>
+				</svg>
+
+				<svg
+					className="absolute -bottom-[19.5rem] left-1/2 transform -translate-x-1/2"
+					width="200"
+					height="320"
+					viewBox="0 0 200 320"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<circle cx="100" cy="300" r="3" fill="#252134" />
+					<path
+						d="M100 300 L100 50"
+						stroke="#252134"
+						strokeWidth="1"
+						fill="none"
+						markerEnd="url(#small-arrowhead-center)"
+					/>
+					<defs>
+						<marker id="small-arrowhead-center" markerWidth="6" markerHeight="4" refX="3" refY="2" orient="auto">
+							<polygon points="0 0, 6 2, 0 4" fill="#252134" />
+						</marker>
+					</defs>
+				</svg>
+
+				<svg
+					className="absolute -bottom-[18rem] left-[19rem] transform -translate-x-1/2"
+					width="400"
+					height="310"
+					viewBox="0 0 400 300"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<circle cx="397" cy="300" r="3" fill="#252134" />
+					<path
+						d="M397 300 C300 300, 250 150, 200 0"
+						stroke="#252134"
+						strokeWidth="1"
+						fill="none"
+						markerEnd="url(#small-arrowhead-right)"
+					/>
+					<defs>
+						<marker id="small-arrowhead-right" markerWidth="6" markerHeight="4" refX="3" refY="2" orient="auto">
+							<polygon points="0 0, 6 2, 0 4" fill="#252134" />
+						</marker>
+					</defs>
+				</svg>
+			</div>
+		</>
+	)
+}
