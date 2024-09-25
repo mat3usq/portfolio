@@ -4,17 +4,18 @@ import { mySkillsSet } from '../constants/constants'
 import checked from '../assets/checked.svg'
 import portfolioLogo from '../assets/portfolioLogo.svg'
 import { skillsIcons } from '../constants/constants'
+import { LeftCurve, RightCurve, TopCurve } from '../assets/svgs/Curves'
 
 const Skills = () => {
 	return (
-		<Section crosses>
+		<Section crosses id={'skills'}>
 			<div className="container lg:flex lg:items-center">
-				<div className="max-w-[40rem]">
+				<div className="relative max-w-[40rem] z-20">
 					<h2 className="h2 mb-4 md:mb-8">My Skills Set</h2>
 
 					<ul className="max-w-[30rem] mb-10 md:mb-14">
-						{mySkillsSet.map(item => (
-							<li className="mb-3 py-3" key={item.id}>
+						{mySkillsSet.map((item, index) => (
+							<li className="mb-3 py-3" key={index}>
 								<div className="flex items-center">
 									<img src={checked} width={30} height={30} alt="checked icon" />
 									<h6 className="body-2 ml-5 text-n-1">{item.title}</h6>
@@ -24,19 +25,15 @@ const Skills = () => {
 						))}
 					</ul>
 				</div>
-
-				<div className="lg:ml-auto xl:w-[38rem] mt-4">
-					{/* <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores inventore doloremque mollitia sunt fugiat magnam eaque aliquid velit ipsum facilis cumque facere, maxime perferendis consectetur. Atque impedit fugit debitis libero!</p> */}
-
+				<div className="relative lg:ml-auto xl:w-[38rem] mt-20">
 					<div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
 						<div className="flex w-56 aspect-square m-auto border border-n-6 rounded-full">
 							<div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
 								<div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-									<img src={portfolioLogo} width={48} height={48} alt="brainwave" />
+									<img src={portfolioLogo} width={48} height={48} alt="portfolioLogo" />
 								</div>
 							</div>
 						</div>
-
 						<ul>
 							{skillsIcons.map((icon, index) => (
 								<li
@@ -57,7 +54,13 @@ const Skills = () => {
 								</li>
 							))}
 						</ul>
+						<TopCurve className="z-10" />
+						<LeftCurve className="z-10" />
+						<RightCurve className="z-10" />
 					</div>
+					{/* <h6 className="body-2 ml-5 my-8 text-n-1 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto"> */}
+					{/* Other technologies I know well:{' '} */}
+					{/* </h6>{' '} */}
 				</div>
 			</div>
 		</Section>
