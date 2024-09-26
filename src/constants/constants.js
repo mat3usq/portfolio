@@ -21,17 +21,25 @@ export const navigation = [
 	},
 ]
 
-import javaLogo from '../assets/javaLogo.svg'
-import springLogo from '../assets/springLogo.svg'
-import mavenLogo from '../assets/mavenLogo.svg'
-import githubLogo from '../assets/githubLogo.svg'
-import htmlLogo from '../assets/htmlLogo.svg'
-import cssLogo from '../assets/cssLogo.svg'
-import jsLogo from '../assets/jsLogo.svg'
-import mysqlLogo from '../assets/mysqlLogo.svg'
-import oracleLogo from '../assets/oracleLogo.svg'
-import typescriptLogo from '../assets/typescriptLogo.svg'
-import thymeleafLogo from '../assets/thymeleafLogo.svg'
+import javaLogo from '../assets/logos/javaLogo.svg'
+import springLogo from '../assets/logos/springLogo.svg'
+import mavenLogo from '../assets/logos/mavenLogo.svg'
+import githubLogo from '../assets/logos/githubLogo.svg'
+import htmlLogo from '../assets/logos/htmlLogo.svg'
+import cssLogo from '../assets/logos/cssLogo.svg'
+import jsLogo from '../assets/logos/jsLogo.svg'
+import mysqlLogo from '../assets/logos/mysqlLogo.svg'
+import oracleLogo from '../assets/logos/oracleLogo.svg'
+import typescriptLogo from '../assets/logos/typescriptLogo.svg'
+import thymeleafLogo from '../assets/logos/thymeleafLogo.svg'
+import cppLogo from '../assets/logos/cppLogo.svg'
+import figmaLogo from '../assets/logos/figmaLogo.svg'
+import pythonLogo from '../assets/logos/pythonLogo.svg'
+import qgisLogo from '../assets/logos/qgisLogo.svg'
+import reactLogo from '../assets/logos/reactLogo.svg'
+import scssLogo from '../assets/logos/scssLogo.svg'
+import tailwindLogo from '../assets/logos/tailwindLogo.svg'
+import angularLogo from '../assets/logos/angularLogo.svg'
 
 export const heroIcons = [
 	{ title: 'Java Logo', width: '35', height: '35', source: javaLogo },
@@ -94,10 +102,10 @@ export const skillsIcons = [
 	},
 	{
 		id: 2,
-		title: 'Maven',
-		source: mavenLogo,
-		width: 38,
-		height: 38,
+		title: 'ThymeLeaf',
+		source: thymeleafLogo,
+		width: 34,
+		height: 34,
 	},
 	{
 		id: 3,
@@ -115,15 +123,15 @@ export const skillsIcons = [
 	},
 	{
 		id: 5,
-		title: 'JavaScritp',
+		title: 'JavaScript',
 		source: jsLogo,
 		width: 30,
 		height: 30,
 	},
 	{
 		id: 6,
-		title: 'Oracle',
-		source: oracleLogo,
+		title: 'TypeScript',
+		source: typescriptLogo,
 		width: 35,
 		height: 35,
 	},
@@ -138,8 +146,44 @@ export const skillsIcons = [
 
 export const technologiesIcons = [
 	{
+		title: 'C++',
+		source: cppLogo,
+	},
+	{
+		title: 'Figma',
+		source: figmaLogo,
+	},
+	{
+		title: 'Python',
+		source: pythonLogo,
+	},
+	{
+		title: 'Qgis',
+		source: qgisLogo,
+	},
+	{
 		title: 'Oracle',
 		source: oracleLogo,
+	},
+	{
+		title: 'React',
+		source: reactLogo,
+	},
+	{
+		title: 'Scss',
+		source: scssLogo,
+	},
+	{
+		title: 'TailWind',
+		source: tailwindLogo,
+	},
+	{
+		title: 'Angular',
+		source: angularLogo,
+	},
+	{
+		title: 'Github',
+		source: githubLogo,
 	},
 	{
 		title: 'Maven',

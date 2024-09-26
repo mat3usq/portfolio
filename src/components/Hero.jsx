@@ -1,6 +1,6 @@
 import Section from './Section'
 import Button from './Button'
-import javaLogo from '../assets/javaLogo.svg'
+import javaLogo from '../assets/logos/javaLogo.svg'
 import galaxy from '../assets/darkerGalaxy.jpg'
 import { PlanetsAndOrbits, BottomLine, BackgroundScreens } from './HeroBackground'
 import { heroIcons } from '../constants/constants'

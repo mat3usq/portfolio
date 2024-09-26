@@ -1,4 +1,4 @@
-import portfolioLogo from '../assets/portfolioLogo.svg'
+import portfolioLogo from '../assets/logos/portfolioLogo.svg'
 import Button from './Button'
 import StarsCanvas from './StarsBackground'
 

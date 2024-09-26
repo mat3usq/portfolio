@@ -2,7 +2,7 @@ import React from 'react'
 import Section from './Section'
 import { mySkillsSet } from '../constants/constants'
 import checked from '../assets/checked.svg'
-import portfolioLogo from '../assets/portfolioLogo.svg'
+import portfolioLogo from '../assets/logos/portfolioLogo.svg'
 import { skillsIcons } from '../constants/constants'
 import { BottomCurve, LeftCurve, RightCurve, TopCurve } from '../assets/svgs/Curves'
 import Tech from './Tech'
@@ -62,7 +62,7 @@ const Skills = () => {
 					</div>
 				</div>
 			</div>
-			<h5 className="tagline mt-16 text-center text-n-1">Other technologies I know well</h5>
+			<h5 className="tagline mt-16 mb-10 text-center text-n-1">Other technologies I know well</h5>
 			<Tech />
 		</Section>
 	)
