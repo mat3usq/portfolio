@@ -30,6 +30,8 @@ import cssLogo from '../assets/cssLogo.svg'
 import jsLogo from '../assets/jsLogo.svg'
 import mysqlLogo from '../assets/mysqlLogo.svg'
 import oracleLogo from '../assets/oracleLogo.svg'
+import typescriptLogo from '../assets/typescriptLogo.svg'
+import thymeleafLogo from '../assets/thymeleafLogo.svg'
 
 export const heroIcons = [
 	{ title: 'Java Logo', width: '35', height: '35', source: javaLogo },
@@ -75,7 +77,6 @@ export const mySkillsSet = [
 		stars: 5,
 	},
 ]
-
 export const skillsIcons = [
 	{
 		id: 0,
@@ -132,5 +133,16 @@ export const skillsIcons = [
 		source: mysqlLogo,
 		width: 38,
 		height: 38,
+	},
+]
+
+export const technologiesIcons = [
+	{
+		title: 'Oracle',
+		source: oracleLogo,
+	},
+	{
+		title: 'Maven',
+		source: mavenLogo,
 	},
 ]
