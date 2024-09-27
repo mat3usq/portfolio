@@ -196,7 +196,7 @@ export const exprojectsInfo = [
 		title: 'Java Developer',
 		company_name: 'Asseco',
 		icon: 'asseco',
-		iconBg: '#383E56',
+		iconBg: '#c299ff',
 		date: 'March 2023 - April 2024',
 		description: [
 			'Developing and maintaining web applications in Java using the Spring Framework and related technologies.',

@@ -37,7 +37,7 @@ const Header = () => {
 				openNavigation ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'
 			}`}>
 			<div className="flex items-center px-5 lg:px-7.5x xl:px-10 max-lg:py4">
-				<a className="flex items-center gap-4 w-[12rem] xl:mr-8 py-2" href="#hero">
+				<a className="flex items-center gap-4 w-[12rem] xl:mr-8 py-2" href="#aboutMe">
 					<img src={portfolioLogo} alt="logo earth" width={60} height={60} />
 					<span className="font-code text-2xl text-transparent bg-clip-text font-bold bg-gradient-to-r from-[#89F9E8] via-[#D87CEE] to-[#9099FC]">
 						Mat3usq

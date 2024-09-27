@@ -29,7 +29,9 @@ const ExperienceCard = ({ experience }) => {
 				</div>
 			}>
 			<div>
-				<h3 className="text-color-2 text-[24px] font-bold">{experience.title}</h3>
+				<h3 className=" text-[24px] font-bold" style={{ color: experience.iconBg }}>
+					{experience.title}
+				</h3>
 				<p className="text-n-3 text-[16px] font-semibold font-code m-0">{experience.company_name}</p>
 			</div>
 
