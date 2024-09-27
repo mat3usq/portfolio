@@ -1,4 +1,5 @@
 import ButtonGradient from './assets/svgs/ButtonGradient'
+import Exprojects from './components/Exprojects'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
@@ -11,6 +12,7 @@ const App = () => {
 				<Header />
 				<Hero />
 				<Skills />
+				<Exprojects />
 			</div>
 			<StarsCanvas />
 			<ButtonGradient />

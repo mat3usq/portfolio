@@ -12,7 +12,7 @@ export const navigation = [
 	{
 		id: '2',
 		title: 'Projects & Experience',
-		url: '#projects',
+		url: '#exprojects',
 	},
 	{
 		id: '3',
@@ -188,5 +188,21 @@ export const technologiesIcons = [
 	{
 		title: 'Maven',
 		source: mavenLogo,
+	},
+]
+
+export const exprojectsInfo = [
+	{
+		title: 'Java Developer',
+		company_name: 'Asseco',
+		icon: 'asseco',
+		iconBg: '#383E56',
+		date: 'March 2023 - April 2024',
+		desc: [
+			'Developing and maintaining web applications in Java using the Spring Framework and related technologies.',
+			'Collaborating with cross-functional teams, including designers, product managers, and other developers, to create high-quality solutions.',
+			'Implementing responsive design and ensuring cross-browser compatibility.',
+			'Participating in code reviews and providing constructive feedback to other developers.',
+		],
 	},
 ]
