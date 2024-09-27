@@ -13,7 +13,12 @@ const Hero = () => {
 	const parallaxRef = useRef(null)
 
 	return (
-		<Section className="pt-[12rem] -mt-[5rem]" crosses crossesOffset="lg:translate-y-[5rem]" id="hero" photo={galaxy}>
+		<Section
+			className="pt-[12rem] -mt-[5rem]"
+			crosses
+			crossesOffset="lg:translate-y-[5rem]"
+			id={'aboutMe'}
+			photo={galaxy}>
 			<div className="container relative" ref={parallaxRef}>
 				<div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
 					<div className="text-center flex justify-center items-center mb-[3rem] md:mb-20 lg:mb-[6rem]">
