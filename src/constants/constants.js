@@ -198,7 +198,7 @@ export const exprojectsInfo = [
 		icon: 'asseco',
 		iconBg: '#383E56',
 		date: 'March 2023 - April 2024',
-		desc: [
+		description: [
 			'Developing and maintaining web applications in Java using the Spring Framework and related technologies.',
 			'Collaborating with cross-functional teams, including designers, product managers, and other developers, to create high-quality solutions.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',

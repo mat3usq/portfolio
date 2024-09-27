@@ -12,7 +12,7 @@ const Skills = () => {
 		<Section crosses id={'skills'}>
 			<div className="container lg:flex lg:items-center">
 				<div className="relative max-w-[40rem] z-20">
-					<h2 className="h2 mb-4 md:mb-8">My Skills Set</h2>
+				<h2 className="h2 mb-4 md:mb-8">My Skills Set</h2>
 
 					<ul className="max-w-[30rem] mb-10 md:mb-14">
 						{mySkillsSet.map((item, index) => (
