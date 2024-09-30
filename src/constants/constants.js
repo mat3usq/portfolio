@@ -51,6 +51,7 @@ export const heroIcons = [
 import gamer from '../assets/gamer.svg'
 import coffee from '../assets/coffee.svg'
 import computer from '../assets/computer.svg'
+import { link } from 'framer-motion/client'
 
 export const notificationsImages = [
 	{ title: 'Gamer PacMan', width: '35', height: '35', source: gamer },
@@ -190,11 +191,26 @@ export const technologiesIcons = [
 		source: mavenLogo,
 	},
 ]
+
+import secondarySchool from '../assets/projectImgs/secondarySchool.png'
+import univeristy from '../assets/projectImgs/univeristy.png'
+import gus from '../assets/projectImgs/gus.png'
+import syncFolder from '../assets/projectImgs/syncFolder.png'
+import writersReaders from '../assets/projectImgs/writersReaders.png'
+import notes from '../assets/projectImgs/notes.png'
+import battleship from '../assets/projectImgs/battleship.png'
+import enchantedGame from '../assets/projectImgs/enchantedGame.png'
+import repairComp from '../assets/projectImgs/repairComp.png'
+import car from '../assets/projectImgs/car.png'
+import school from '../assets/projectImgs/school.png'
+import exam from '../assets/projectImgs/exam.png'
+import courseCar from '../assets/projectImgs/courseCar.png'
+
 export const exprojectsInfo = [
 	{
 		title: 'Computer Science',
 		company_name: 'General Secondary School No. IV named after C.K. Norwid, Białystok',
-		icon: 'school',
+		icon: secondarySchool,
 		iconBg: '#ffcc00',
 		date: 'September 2018 - May 2021',
 		description: [
@@ -204,11 +220,13 @@ export const exprojectsInfo = [
 			'Acquired a solid understanding of basic database principles, including data structures and SQL queries.',
 			'Built a strong foundation in mathematics and its applications to informatics and programming tasks.',
 		],
+		languages: ['C', 'C++', 'SQL'],
+		link: 'https://4lo.bialystok.pl/',
 	},
 	{
-		title: "Computer Science Engineer's  Degree Student",
+		title: "Computer Science Engineer's Degree Student",
 		company_name: 'Bialystok University of Technology',
-		icon: 'university',
+		icon: univeristy,
 		iconBg: '#66ccff',
 		date: 'October 2021 - Present',
 		description: [
@@ -223,27 +241,14 @@ export const exprojectsInfo = [
 			'Improved collaborative and team-based software development through agile methodologies, code versioning systems, and code reviews.',
 			'Acquired deep knowledge of technical problem-solving and troubleshooting, especially in distributed systems and networked applications.',
 		],
-	},
-	{
-		title: 'Image Processing & Remote Sensing',
-		company_name: 'Intern in Statistical Office in Bialystok',
-		icon: 'office',
-		iconBg: '#32CD32',
-		date: 'June 2024 - August 2024',
-		description: [
-			'Gained hands-on experience in applying advanced geospatial analysis techniques using QGIS, focusing on the processing and interpretation of spatial data.',
-			'Worked with Java, JavaScript, and Python to create scripts and tools for automating workflows and enhancing the efficiency of image processing tasks within QGIS.',
-			'Engaged in projects related to remote sensing, using programming languages to handle and analyze geospatial imagery, contributing to environmental and spatial research.',
-			'Utilized Python for developing automated solutions to streamline image analysis tasks, improving data processing times and accuracy.',
-			'Collaborated closely with senior analysts to support research on spatial data analysis, contributing technical solutions that facilitated smoother data handling processes.',
-			'Gained an in-depth understanding of QGIS functionalities, including layers, projections, and raster data, applying this knowledge to solve practical data-driven challenges.',
-		],
+		languages: ['JAVA', 'SPRING', 'HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'ANGULAR', 'MYSQL', 'ORACLE'],
+		link: 'https://wi.pb.edu.pl/',
 	},
 	{
 		title: 'Directory Synchronization Daemon',
 		company_name: 'Operating Systems - Project',
-		icon: 'folder',
-		iconBg: '#008080',
+		icon: syncFolder,
+		iconBg: '#A020F0',
 		date: 'April 2023',
 		description: [
 			'Developed a program that keeps two directories in sync by checking for differences and updating files as needed.',
@@ -253,12 +258,14 @@ export const exprojectsInfo = [
 			'All file operations are done using the Linux API directly, without relying on external tools or libraries.',
 			'The programs sleep interval can be customized, and it includes strong error handling to ensure it runs smoothly and without issues.',
 		],
+		languages: ['C', 'LINUX'],
+		link: 'https://github.com/mat3usq/Demon-Synchronizacja-Katalogow',
 	},
 	{
 		title: 'Readers and Writers Synchronization Problem',
 		company_name: 'Operating Systems - Project',
-		icon: 'sync',
-		iconBg: '#FF8C00',
+		icon: writersReaders,
+		iconBg: '#d147a3',
 		date: 'May 2023 - June 2023',
 		description: [
 			'Developed multiple solutions for the readers-writers problem, ensuring fair access to a shared resource for both readers and writers.',
@@ -267,12 +274,14 @@ export const exprojectsInfo = [
 			'Program allows users to specify the number of readers and writers via command-line arguments, adapting to various scenarios.',
 			'Displayed real-time updates on the queue of readers and writers, as well as those currently accessing the resource.',
 		],
+		languages: ['C', 'LINUX'],
+		link: 'https://github.com/mat3usq/Czytelnicy-Pisarze',
 	},
 	{
 		title: 'Noteally - Note Management Application',
 		company_name: 'Java Spring Application Development',
-		icon: 'note',
-		iconBg: '#3498db',
+		icon: notes,
+		iconBg: '#9b59b6',
 		date: 'May 2023 - June 2023',
 		description: [
 			'Developed a web application for saving and sharing notes, to-do lists, and other useful information.',
@@ -281,12 +290,14 @@ export const exprojectsInfo = [
 			'Ensured form validation, filtering, and sorting capabilities to provide an intuitive and efficient note management experience.',
 			'Integrated Spring Security for user authentication and session management, ensuring secure login and role-based access control.',
 		],
+		languages: ['JAVA', 'SPRING', 'HTML', 'CSS', 'JAVASCRIPT', 'MYSQL'],
+		link: 'https://github.com/mat3usq/Noteally',
 	},
 	{
 		title: 'Battleships - Interactive Game',
 		company_name: 'Java Swing Application',
-		icon: 'game',
-		iconBg: '#1abc9c',
+		icon: battleship,
+		iconBg: '#e74c3c',
 		date: 'October 2023 - January 2024',
 		description: [
 			'Developed an interactive version of the classic "Battleships" game with both a text-based and graphical interface using Java Swing.',
@@ -297,25 +308,14 @@ export const exprojectsInfo = [
 			'Used Model-View-Controller (MVC) architecture to separate game logic from the user interface, facilitating easy modifications and future expansions.',
 			'Included a ranking system and in-game access to the rules for a complete player experience.',
 		],
-	},
-	{
-		title: 'Battleships - Enhanced Interactive Game',
-		company_name: 'Java Swing Application',
-		icon: 'game',
-		iconBg: '#e67e22',
-		date: 'January 2024',
-		description: [
-			'Basic game "Battleships" has been extended by using design patterns such as Singleton to manage the game instance, State for player actions and Factory Method for ship creation, providing scalable and maintainable code.',
-			'Improved AI with Strategy and Iterator patterns, enabling multiple difficulty levels with intelligent shot placement.',
-			'Implemented a ranking system with Decorator pattern to dynamically assign points based on difficulty level.',
-			'used MVC architecture to separate game logic from the interface, allowing for future expansions without major code changes.',
-		],
+		languages: ['JAVA', 'SWING'],
+		link: 'https://github.com/mat3usq/BattleShips',
 	},
 	{
 		title: 'Computer Service - React Application',
 		company_name: 'React Web Development',
-		icon: 'laptop',
-		iconBg: '#3498db',
+		icon: repairComp,
+		iconBg: '#8ca6c0',
 		date: 'December 2023',
 		description: [
 			'Developed a computer service management app using React and TypeScript, focusing on user-friendly data validation and efficient state management.',
@@ -325,12 +325,29 @@ export const exprojectsInfo = [
 			'Set up routing with dynamic parameters and state management using the Flux architecture.',
 			'Ensured no console errors and followed accessibility standards to improve user experience.',
 		],
+		languages: ['REACT', 'TYPESCRIPT'],
+		link: 'https://github.com/mat3usq/Serwis-Komputerowy-React',
+	},
+	{
+		title: 'Battleships - Enhanced Interactive Game',
+		company_name: 'Java Swing Application',
+		icon: enchantedGame,
+		iconBg: '#e67e22',
+		date: 'January 2024',
+		description: [
+			'Basic game "Battleships" has been extended by using design patterns such as Singleton to manage the game instance, State for player actions and Factory Method for ship creation, providing scalable and maintainable code.',
+			'Improved AI with Strategy and Iterator patterns, enabling multiple difficulty levels with intelligent shot placement.',
+			'Implemented a ranking system with Decorator pattern to dynamically assign points based on difficulty level.',
+			'used MVC architecture to separate game logic from the interface, allowing for future expansions without major code changes.',
+		],
+		languages: ['JAVA', 'SWING', 'DESIGN PATTERNS'],
+		link: 'https://github.com/mat3usq/Patterns-Battleships',
 	},
 	{
 		title: 'Driving School - Responsive Website',
 		company_name: 'Web Development Project',
-		icon: 'car',
-		iconBg: '#3498db',
+		icon: car,
+		iconBg: '#2ecc71',
 		date: 'January 2024',
 		description: [
 			'Developed a responsive website for a driving school, accessible on desktop, tablet, and mobile, with the goal of future use in an engineering thesis.',
@@ -339,26 +356,13 @@ export const exprojectsInfo = [
 			'Integrated tools like Bootstrap and slick.js for responsive design and smooth transitions.',
 			'Hosted the project on GitHub for easy access and future academic use.',
 		],
-	},
-	{
-		title: 'Schoolify - Educational Management System',
-		company_name: 'Spring Java Project',
-		icon: 'school',
-		iconBg: '#2ecc71',
-		date: 'March 2024 - June 2024',
-		description: [
-			'Designed and developed a full-featured web application to simplify the management of educational processes within schools and universities, leveraging the power of Spring Boot.',
-			'Implemented a secure authentication and authorization system using Spring Security, ensuring robust protection against unauthorized access with role-based controls and CSRF protection.',
-			'Developed intuitive interfaces for managing contacts, courses, and grades, allowing teachers to efficiently handle enrollments, add or update student information, and assign grades.',
-			'Created an administrative panel with comprehensive tools for managing system users, courses, classes, and in-app communications.',
-			'Integrated a MySQL database on AWS Cloud for reliable data storage and scalability, ensuring the system can handle a growing number of users and data.',
-			'Prioritized responsive design to ensure that the system is accessible and user-friendly on both desktop and mobile devices, making educational management convenient and flexible.',
-		],
+		languages: ['HTML', 'CSS', 'JAVASCRIPT', 'BOOTSTRAP', 'SASS'],
+		link: 'https://github.com/mat3usq/Driving-School',
 	},
 	{
 		title: 'Online Exam System',
 		company_name: 'Spring Application',
-		icon: 'exam',
+		icon: exam,
 		iconBg: '#1abc9c',
 		date: 'January 2024 - March 2024',
 		description: [
@@ -368,12 +372,48 @@ export const exprojectsInfo = [
 			'Integrated functionality for adding students or groups to exams, with duplicate checking, via a dedicated interface.',
 			'Provided user registration, login, and profile management features for both students and examiners, including history of completed exams.',
 		],
+		languages: ['JAVA', 'SPRING', 'MYSQL', 'HTML', 'CSS', 'JAVASCRIPT'],
+		link: 'https://github.com/mat3usq/ExamApp',
+	},
+	{
+		title: 'Schoolify - Educational Management System',
+		company_name: 'Spring Java Project',
+		icon: school,
+		iconBg: '#f1c40f',
+		date: 'March 2024 - June 2024',
+		description: [
+			'Designed and developed a full-featured web application to simplify the management of educational processes within schools and universities, leveraging the power of Spring Boot.',
+			'Implemented a secure authentication and authorization system using Spring Security, ensuring robust protection against unauthorized access with role-based controls and CSRF protection.',
+			'Developed intuitive interfaces for managing contacts, courses, and grades, allowing teachers to efficiently handle enrollments, add or update student information, and assign grades.',
+			'Created an administrative panel with comprehensive tools for managing system users, courses, classes, and in-app communications.',
+			'Integrated a MySQL database on AWS Cloud for reliable data storage and scalability, ensuring the system can handle a growing number of users and data.',
+			'Prioritized responsive design to ensure that the system is accessible and user-friendly on both desktop and mobile devices, making educational management convenient and flexible.',
+		],
+		languages: ['JAVA', 'SPRING', 'AWS CLOUD', 'MYSQL', 'HTML', 'CSS', 'JAVASCRIPT'],
+		link: 'https://github.com/mat3usq/school',
+	},
+	{
+		title: 'Image Processing & Remote Sensing',
+		company_name: 'Intern in Statistical Office in Bialystok',
+		icon: gus,
+		iconBg: '#228B22',
+		date: 'June 2024 - August 2024',
+		description: [
+			'Gained hands-on experience in applying advanced geospatial analysis techniques using QGIS, focusing on the processing and interpretation of spatial data.',
+			'Worked with Java, JavaScript, and Python to create scripts and tools for automating workflows and enhancing the efficiency of image processing tasks within QGIS.',
+			'Engaged in projects related to remote sensing, using programming languages to handle and analyze geospatial imagery, contributing to environmental and spatial research.',
+			'Utilized Python for developing automated solutions to streamline image analysis tasks, improving data processing times and accuracy.',
+			'Collaborated closely with senior analysts to support research on spatial data analysis, contributing technical solutions that facilitated smoother data handling processes.',
+			'Gained an in-depth understanding of QGIS functionalities, including layers, projections, and raster data, applying this knowledge to solve practical data-driven challenges.',
+		],
+		languages: ['QGIS', 'JAVA', 'JAVASCRIPT', 'PYTHON'],
+		link: 'https://bialystok.stat.gov.pl/',
 	},
 	{
 		title: 'Driving School - Comprehensive Educational Management System',
 		company_name: 'Engineering Thesis Project',
-		icon: 'car',
-		iconBg: '#2980b9',
+		icon: courseCar,
+		iconBg: '#d35400',
 		date: 'March 2024 - In progress',
 		description: [
 			'Developed a responsive web application to streamline the management of driving lessons, exams, and student progress for driving schools.',
@@ -385,5 +425,29 @@ export const exprojectsInfo = [
 			'Prioritized data security, ensuring personal information protection in compliance with data privacy laws.',
 			'The project is optimized for mobile and desktop use, making it accessible and convenient for users on all platforms.',
 		],
+		languages: ['JAVA', 'SPRING', 'AWS CLOUD', 'MYSQL', 'HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'BOOTSTRAP'],
+		link: 'https://github.com/mat3usq/DrivingSchool',
 	},
 ]
+
+export const languageColors = {
+	JAVA: '#ff0066',
+	SPRING: '#6db33f',
+	HTML: '#e34c26',
+	CSS: '#3399ff',
+	JAVASCRIPT: '#f0db4f',
+	REACT: '#61dafb',
+	ANGULAR: '#ff6666',
+	MYSQL: '#00758f',
+	ORACLE: '#f80000',
+	C: '#999999',
+	'C++': '#3366ff',
+	PYTHON: '#3572A5',
+	LINUX: '#f0e68c',
+	QGIS: '#589632',
+	TYPESCRIPT: '#3178c6',
+	SASS: '#cc6699',
+	BOOTSTRAP: '#7952b3',
+	'AWS CLOUD': '#ff9900',
+	'DESIGN PATTERNS': '#f1c40f',
+}

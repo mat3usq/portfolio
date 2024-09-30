@@ -2,9 +2,10 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { motion } from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css'
-import { exprojectsInfo } from '../constants/constants'
+import { exprojectsInfo, languageColors } from '../constants/constants'
 import Section from './Section'
 import { textVariant } from '../constants/motions'
+import { FaGithub } from 'react-icons/fa'
 
 const ExperienceCard = ({ experience }) => {
 	return (
@@ -27,11 +28,11 @@ const ExperienceCard = ({ experience }) => {
 			}}
 			icon={
 				<div className="flex justify-center items-center w-full h-full">
-					<img src={experience.icon} alt={experience.company_name} className="w-[60%] h-[60%] object-contain" />
+					<img src={experience.icon} alt={experience.company_name} className="w-[70%] h-[70%] object-contain" />
 				</div>
 			}>
 			<div>
-				<h3 className=" text-[24px] font-bold" style={{ color: experience.iconBg }}>
+				<h3 className="text-[24px] font-bold" style={{ color: experience.iconBg }}>
 					{experience.title}
 				</h3>
 				<p className="text-n-3 text-[16px] font-semibold font-code m-0">{experience.company_name}</p>
@@ -41,11 +42,35 @@ const ExperienceCard = ({ experience }) => {
 				{experience.description.map((desc, index) => (
 					<li
 						key={`experience-desc-${index}`}
-						className="text-n-1 font-sans text-[14px] pl-1 tracking-wide leading-relaxed">
+						className="text-n-1 font-sans text-[13px] pl-1 tracking-wide leading-relaxed">
 						{desc}
 					</li>
 				))}
 			</ul>
+
+			<div className="mt-4 flex items-center">
+				<div className="flex flex-wrap">
+					{experience.languages.map((language, index) => (
+						<span
+							key={`language-${index}`}
+							className="mr-2 mb-2 px-2 py-1 text-[13px] font-code font-semibold"
+							style={{
+								color: languageColors[language] || '#fff',
+								border: `1px solid ${languageColors[language] || '#fff'}`,
+								borderRadius: '12px',
+							}}>
+							{language}
+						</span>
+					))}
+				</div>
+				<a
+					href={experience.link}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="w-[130px] ml-auto text-[12px] text-blue-500 hover:underline">
+					Show More
+				</a>
+			</div>
 		</VerticalTimelineElement>
 	)
 }
@@ -63,6 +88,27 @@ const Exprojects = () => {
 					{exprojectsInfo.map((experience, index) => (
 						<ExperienceCard key={`experience-${index}`} experience={experience} />
 					))}
+
+					<VerticalTimelineElement
+						iconStyle={{
+							background: '#000',
+							color: '#fff',
+							cursor: 'pointer',
+						}}
+						icon={
+							<a
+								href="https://github.com/mat3usq"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-full h-full"
+								aria-label="GitHub Profile">
+								<FaGithub />
+							</a>
+						}
+						date=""
+						contentStyle={{ display: 'none' }}
+						contentArrowStyle={{ display: 'none' }}
+					/>
 				</VerticalTimeline>
 			</div>
 		</Section>
