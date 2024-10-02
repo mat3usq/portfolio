@@ -1,6 +1,7 @@
 import ButtonGradient from './assets/svgs/ButtonGradient'
 import Contact from './components/Contact'
 import Exprojects from './components/Exprojects'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
@@ -15,6 +16,7 @@ const App = () => {
 				<Skills />
 				<Exprojects />
 				<Contact />
+				<Footer />
 			</div>
 			<StarsCanvas />
 			<ButtonGradient />
