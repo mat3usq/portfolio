@@ -8,6 +8,7 @@ import Notification from './Notification'
 
 import { useRef } from 'react'
 import { ScrollParallax } from 'react-just-parallax'
+import CodeTyper from './CodeTyper'
 
 const Hero = () => {
 	const parallaxRef = useRef(null)
@@ -74,15 +75,14 @@ const Hero = () => {
 					</Button>
 				</div>
 
-				<div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+				<div className="relative text-[6px] sm:text-[11px] md:text-[12.5px] lg:text-[17px] mx-auto md:max-w-5xl xl:mb-24">
 					<div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
 						<div className="relative bg-n-8 rounded-[1rem]">
 							<div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-
-							<div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-								interview me
+							<div className="w-full rounded-b-[0.9rem] overflow-hidden ">
+								<CodeTyper />
 								<ScrollParallax isAbsolutelyPositioned>
-									<ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+									<ul className="hidden absolute -left-[5.5rem] bottom-[4rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
 										{heroIcons.map((icon, index) => (
 											<li className="p-5" key={index}>
 												<img
@@ -98,7 +98,7 @@ const Hero = () => {
 								</ScrollParallax>
 								<ScrollParallax isAbsolutelyPositioned>
 									<Notification
-										className="hidden absolute -right-[6rem] bottom-[14rem] w-[18rem] xl:flex"
+										className="hidden absolute -right-[6rem] top-[14rem] w-[18rem] xl:flex"
 										title="Coding ..."
 									/>
 								</ScrollParallax>
