@@ -6,8 +6,8 @@ import CodeSvg from '../assets/svgs/CodeSvg'
 export const BackgroundScreens = () => {
 	return (
 		<>
-			<div className="relative z-1 h-6 mx-4 bg-n-11 shadow-xl rounded-b-[.9rem] lg:h-6 lg:mx-8" />
-			<div className="relative z-1 h-6 mx-8 bg-n-11/70 shadow-xl rounded-b-[.9rem] lg:h-6 lg:mx-20" />
+			<div className="relative z-[-1] h-6 mx-4 bg-n-11 shadow-xl rounded-b-[.9rem] lg:h-6 lg:mx-8" />
+			<div className="relative z-[-1] h-6 mx-8 bg-n-11/70 shadow-xl rounded-b-[.9rem] lg:h-6 lg:mx-20" />
 		</>
 	)
 }
