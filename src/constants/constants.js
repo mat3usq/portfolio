@@ -228,7 +228,7 @@ export const exprojectsInfo = [
 		company_name: 'Bialystok University of Technology',
 		icon: univeristy,
 		iconBg: '#66ccff',
-		date: 'October 2021 - Present',
+		date: 'October 2021 - February 2025',
 		description: [
 			'Pursuing a Engineers degree in Informatics Engineering, with a strong focus on software development and computer science principles.',
 			'Recipient of the Rector’s Scholarship for academic excellence, maintaining high grades throughout the course of study.',
@@ -414,7 +414,7 @@ export const exprojectsInfo = [
 		company_name: 'Engineering Thesis Project',
 		icon: courseCar,
 		iconBg: '#d35400',
-		date: 'March 2024 - In progress',
+		date: 'March 2024 - February 2025',
 		description: [
 			'Developed a responsive web application to streamline the management of driving lessons, exams, and student progress for driving schools.',
 			'Implemented a lesson booking system with an interactive calendar, allowing instructors and students to schedule and track lessons.',
