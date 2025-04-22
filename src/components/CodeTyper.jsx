@@ -51,7 +51,7 @@ const Typewriter = ({ text, language = 'javascript', speed = 50 }) => {
 }
 
 const CodeTyper = () => {
-	const codeSnippet = ` ppackage com.personaljourney;
+	const codeSnippet = `pppackage com.personal.journey;
 
 public class AspiringComputerScientist {
 
